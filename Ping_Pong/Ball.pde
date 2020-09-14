@@ -35,9 +35,12 @@ void ballDraw() {
   ballX = ballX + ballSpeedX;
   ballY = ballY + ballSpeedY;
   
+   if(a == true)
+  {
   stroke(255);
   strokeWeight(2);
-  fill(127);
+  fill(random(0,255), random(0,255), random(0,255));
   ellipse(ballX, ballY, ballSize, ballSize);
   noFill();
+  }
 }

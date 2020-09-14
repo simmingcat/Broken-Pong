@@ -1,5 +1,11 @@
 color  Black= #000000 ;
 color white = #FFFFFF;
+color teal = #00FFFD;
+color darkTeal= #48D1CD;
+color red = #FF0000;
+color darkRed = #D14848;
+boolean a = true;
+boolean b = true;
 
 void setup(){
   fullScreen();

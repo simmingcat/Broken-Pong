@@ -8,11 +8,20 @@ float paddleMoveXRed;
 float paddleMoveYBlue;
 float paddleMoveYRed;
 
-float randomWidth;
-float randomHeight;
-float randomWidth2;
-float randomHeight2;
+float restartWidth;
+float restartHeight;
+float restartWidth2;
+float restartHeight2;
 
+float scoreRedWidth;
+float scoreRedHeight;
+float scoreRedX;
+float scoreRedY;
+
+float scoreBlueWidth;
+float scoreBlueHeight;
+float scoreBlueX;
+float scoreBlueY;
 
 void procssingSetup() {
 
@@ -25,26 +34,24 @@ void procssingSetup() {
 
   paddleMoveYBlue = height*1/2-paddleHeight*1/3;
   paddleMoveYRed = height*1/2-paddleHeight*1/3;
+
+  restartWidth = 80 ;
+  restartHeight= 0; 
+  restartWidth2 = 374;
+  restartHeight2 = 80;
+
+  scoreRedWidth = 1286;
+  scoreRedHeight = 0;
+  scoreRedX = 1366;
+  scoreRedY = 80;
+
+  scoreBlueWidth = 0;
+  scoreBlueHeight = 0;
+  scoreBlueX = 80;
+  scoreBlueY = 80;
   
-  randomWidth = 80 ;
-  randomHeight= 0; 
-  randomWidth2 = 374;
-  randomHeight2 = 80;
-
-
+  
   /*
-  ballMoveX;
-   ballMoveY;
-   ballSpeedX;
-   ballSpeedY;
-   */
-  /*
-   
-   paddleUpRed;
-   paddleUpBlue;
-   paddleDownRed;
-   paddleDownBlue;
-   
    scoreLeft;
    scoreRight;
    */
@@ -53,9 +60,9 @@ void procssingSetup() {
 
 void screenChecker() {
   if (width<height) {
-    println ("go back normal"); 
+    println ("you cant play the game like this"); 
     exit();
   } else {
-    println ("good job being normal");
+    println ("good job");
   }
 }

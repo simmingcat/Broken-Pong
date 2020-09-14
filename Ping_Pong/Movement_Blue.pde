@@ -5,9 +5,11 @@ int paddleUpBlueN;
 void movementDrawBlue() {
   paddleUpBlueN = paddleUpBlue;
   if (keyPressed)movementBlue();
-  fill(white);
+  stroke(teal);
+  fill(darkTeal);
   rect(paddleMoveXBlue, paddleUpBlue, paddleWidth, paddleHeight, 5);
   noFill();
+  noStroke();
 }
 
 void movementBlue() {
