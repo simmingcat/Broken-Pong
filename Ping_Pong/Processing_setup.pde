@@ -19,7 +19,7 @@ void procssingSetup() {
 
   paddleMoveYBlue = height*1/2-paddleHeight*1/3;
   paddleMoveYRed = height*1/2-paddleHeight*1/3;
-  
+
 
   /*
   ballMoveX;
@@ -27,7 +27,7 @@ void procssingSetup() {
    ballSpeedX;
    ballSpeedY;
    */
-/*
+  /*
    
    paddleUpRed;
    paddleUpBlue;
