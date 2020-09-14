@@ -23,6 +23,30 @@ float scoreBlueHeight;
 float scoreBlueX;
 float scoreBlueY;
 
+float randomWidth;
+float randomHeight;
+float randomX;
+float randomY;
+
+float hardWidth;
+float hardHeight;
+float hardX;
+float hardY;
+
+float titleWidth;
+float titleHeight;
+float titleX;
+float titleY;
+
+float easyWidth;
+float easyHeight;
+float easyX;
+float easyY;
+float mediumWidth ;
+float mediumHeight;
+float mediumX;
+float mediumY;
+
 void procssingSetup() {
 
   netWidth = 40;
@@ -40,6 +64,11 @@ void procssingSetup() {
   restartWidth2 = 374;
   restartHeight2 = 80;
 
+  randomWidth = width*2/3;
+  randomHeight = 0;
+  randomX = 374;
+  randomY = 80;
+
   scoreRedWidth = 1286;
   scoreRedHeight = 0;
   scoreRedX = 1366;
@@ -49,12 +78,27 @@ void procssingSetup() {
   scoreBlueHeight = 0;
   scoreBlueX = 80;
   scoreBlueY = 80;
+
+  hardWidth = 0;
+  hardHeight = 80;
+  hardX = width*1/3;
+  hardY = 20;
   
+  easyWidth = width*1/3 ;
+  easyHeight = 80;
+  easyX = width*1/3;
+  easyY = 20;
   
-  /*
-   scoreLeft;
-   scoreRight;
-   */
+  mediumWidth = width*2/3;
+  mediumHeight = 80;
+  mediumX = width*1/3;
+  mediumY = 20;
+  
+  titleWidth = width*1/3;
+  titleHeight = 0;
+  titleX = width*1/3;
+  titleY = 80;
+
   GUI();
 }
 

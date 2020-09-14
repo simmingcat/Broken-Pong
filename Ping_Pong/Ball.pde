@@ -1,5 +1,5 @@
-int  ballSpeedX = 5;
-int  ballSpeedY = 5;
+int  ballSpeedX = 2;
+int  ballSpeedY = 2;
 float ballStartPositionX, ballX;
 float ballStartPositionY, ballY;
 float ballSize;
@@ -20,12 +20,24 @@ void ballDraw() {
   }
 
   if (ballX < netWidth+paddleWidth+ballSize*1/2) {
-    if (ballY >= paddleMoveXBlue && ballY <= paddleMoveXBlue+paddleHeight) {
+    if (ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight) {
       ballSpeedX = ballSpeedX * -1;
-    } else {
-      noLoop();
+         } 
+    }
+      
+    if (ballX < netWidth-paddleWidth+ballSize*1/2) {
+    if (ballY >= paddleDownRed && ballY <= paddleDownRed-paddleHeight) {
+      ballSpeedX = ballSpeedX * +1;
     }
   }
+   
+    
+    /*
+    else {
+      noLoop();
+    }
+    */
+  
  
   if (ballX > width) {
     ballSpeedX = ballSpeedX * -1;
