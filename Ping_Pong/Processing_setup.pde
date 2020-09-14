@@ -8,17 +8,28 @@ float paddleMoveXRed;
 float paddleMoveYBlue;
 float paddleMoveYRed;
 
+float randomWidth;
+float randomHeight;
+float randomWidth2;
+float randomHeight2;
+
+
 void procssingSetup() {
 
   netWidth = 40;
   paddleWidth = width*1/76;
   paddleHeight = height*1/5;
 
-  paddleMoveXBlue = 40;
+  paddleMoveXBlue = netWidth;
   paddleMoveXRed = width - netWidth - paddleWidth;
 
   paddleMoveYBlue = height*1/2-paddleHeight*1/3;
   paddleMoveYRed = height*1/2-paddleHeight*1/3;
+  
+  randomWidth = 80 ;
+  randomHeight= 0; 
+  randomWidth2 = 374;
+  randomHeight2 = 80;
 
 
   /*

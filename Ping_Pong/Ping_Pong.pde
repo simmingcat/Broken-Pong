@@ -1,4 +1,5 @@
 color  Black= #000000 ;
+color white = #FFFFFF;
 
 void setup(){
   fullScreen();

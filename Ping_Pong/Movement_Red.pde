@@ -5,7 +5,9 @@ int paddleDownRedN;
 void movementDrawRed(){
    paddleDownRedN = paddleDownRed;
    if(keyPressed)movementRed();
+   fill(white);
    rect(paddleMoveXRed, paddleDownRed, paddleWidth, paddleHeight , 5);
+   noFill();
 }
 
 
