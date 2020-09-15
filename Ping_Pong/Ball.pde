@@ -21,15 +21,17 @@ void ballDraw() {
 
   if (ballX < netWidth+paddleWidth+ballSize*1/2) {
     if (ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight) {
+       ballSpeedX = ballSpeedX * -1;
+        } 
+    }
+        
+          if (ballX > width-netWidth-paddleWidth-ballSize*1/2) {
+    if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
       ballSpeedX = ballSpeedX * -1;
-         } 
-    }
       
-    if (ballX < netWidth-paddleWidth+ballSize*1/2) {
-    if (ballY >= paddleDownRed && ballY <= paddleDownRed-paddleHeight) {
-      ballSpeedX = ballSpeedX * +1;
-    }
-  }
+    }  
+          }
+          
    
     
     /*
