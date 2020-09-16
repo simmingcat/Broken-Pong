@@ -22,15 +22,22 @@ void ballDraw() {
   if (ballX < netWidth+paddleWidth+ballSize*1/2) {
     if (ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight) {
        ballSpeedX = ballSpeedX * -1;
-        } 
+    } else {
+     Blue += 1;
+      stop = true;
     }
+        } 
+    
         
           if (ballX > width-netWidth-paddleWidth-ballSize*1/2) {
     if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
       ballSpeedX = ballSpeedX * -1;
-      
+      } else {
+      Red += 1;
+      stop = true;
+    }
     }  
-          }
+          
           
    
     

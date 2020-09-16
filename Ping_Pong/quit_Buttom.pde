@@ -2,7 +2,7 @@ color hoveroverRed;
 
 void quitDraw(){
   fill(white);
-  rect(titleWidth , titleHeight, titleX, titleY);
+ // rect(titleWidth , titleHeight, titleX, titleY);
 }
 
 void quitKeyPress(){

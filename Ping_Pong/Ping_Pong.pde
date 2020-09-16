@@ -6,13 +6,13 @@ color red = #FF0000;
 color darkRed = #D14848;
 int gameScreen = 0;
 boolean a = true;
-boolean b = true;
 
 void setup(){
   fullScreen();
   screenChecker();
   ballSetUp();
   procssingSetup();
+  scoreBoardSetup();
   
 }
 
@@ -24,23 +24,21 @@ void draw(){
   
 }
 
-void buildDraw(){
-  movementDrawRed();
+void gameScreen() {
   movementDrawBlue();
+  movementDrawRed();
   ballDraw();
   GUI();
-  quitDraw();
+  TitleDraw();
+  scoreBoardDraw();
 }
 
 void keyPressed(){
   quitKeyPress();
-  
+  restart();
 }
-
-
-public void mousePressed(){
+ void mousePressed(){
   quitMousePress();
-  RestartMousePress();
     if (gameScreen==0) {
     startGame();
   }

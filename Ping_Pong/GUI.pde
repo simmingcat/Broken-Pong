@@ -1,6 +1,4 @@
 void GUI(){
-   if(b == true)
-  {
   stroke(random(0,255), random(0,255), random(0,255));
  // frameRate(2);
   fill(white);
@@ -22,4 +20,3 @@ void GUI(){
  noFill();
  noStroke();
   }
-}

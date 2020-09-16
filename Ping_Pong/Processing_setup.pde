@@ -1,4 +1,3 @@
-
 float netWidth;
 float paddleWidth;
 float paddleHeight;
