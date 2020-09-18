@@ -31,6 +31,7 @@ void gameScreen() {
   GUI();
   TitleDraw();
   scoreBoardDraw();
+  quitMousePress();
 }
 
 void keyPressed(){

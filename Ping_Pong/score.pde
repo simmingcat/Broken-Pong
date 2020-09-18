@@ -18,6 +18,10 @@ void scoreBoardDraw() {
   textAlign(CENTER, CENTER);
   textSize(30);
   text(BlueScore, scoreBlueWidth, scoreBlueHeight, scoreBlueX,  scoreBlueY);
+  
+  fill(random(0,255), random(0,255), random(0,255));
+  textAlign(CENTER, CENTER);
+  textSize(30);
   text(RedScore, scoreRedWidth, scoreRedHeight, scoreRedX,  scoreRedY);
 }
 
