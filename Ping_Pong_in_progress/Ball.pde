@@ -15,29 +15,29 @@ void ballSetUp() {
 }
 
  void big(){  
-    if (ballY < 100+ballSize*1/2 || ballY > height-ballSize*1/2) {
+   
+    if (ballY < 100+ballSize*1/2 + 1 || ballY > height-ballSize*1/2) {
     ballSize = ballSize + 0.5 ;
     
   }
    
-    if(ballX < netWidth+paddleWidth+ballSize*1/2){
+    if(ballX < netWidth+paddleWidth+ballSize*1/2 + 1){
       if(ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight){
-        if(ballSize > 150){
     ballSize = ballSize + 0.5 ;
     ballSpeedY = ballSpeedX + 1;
-    }
+   
     }
     }
     
-   if (ballX > width-netWidth-paddleWidth-ballSize*1/2) {
+   if (ballX > width-netWidth-paddleWidth-ballSize*1/2 + 1) {
      if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
-       if(ballSize > 150){
-
     ballSize = ballSize + 0.5 ;
     ballSpeedY = ballSpeedX + 1;
+
+     }
    }
-   
-   }
+   if(ballSize > 150){
+     ballSize -= 0.5;
    }
    
    //  ballSize = ballSize + 0.5 ;
