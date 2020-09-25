@@ -24,7 +24,7 @@ void ballSetUp() {
     if(ballX < netWidth+paddleWidth+ballSize*1/2 + 1){
       if(ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight){
     ballSize = ballSize + 0.5 ;
-    ballSpeedY = ballSpeedX + 1;
+    ballSpeedY = ballSpeedY  + 1;
    
     }
     }
@@ -32,7 +32,7 @@ void ballSetUp() {
    if (ballX > width-netWidth-paddleWidth-ballSize*1/2 + 1) {
      if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
     ballSize = ballSize + 0.5 ;
-    ballSpeedY = ballSpeedX + 1;
+    ballSpeedY = ballSpeedY + 1;
 
      }
    }
