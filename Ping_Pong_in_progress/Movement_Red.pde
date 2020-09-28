@@ -1,6 +1,6 @@
-int paddleDownRed = 500;
+private int paddleDownRed = 500;
 
-int paddleDownRedN;
+public int paddleDownRedN;
 
 void movementDrawRed(){
    paddleDownRedN = paddleDownRed;

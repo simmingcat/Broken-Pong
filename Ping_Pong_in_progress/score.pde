@@ -13,6 +13,13 @@ void scoreBoardSetup() {
 
 void scoreBoardDraw() {
   if (keyPressed)restartKeyPress();
+   RedScore = Integer.toString(Red);
+  
+  fill(random(0,255), random(0,255), random(0,255));
+  textAlign(CENTER, CENTER);
+  textSize(30);
+  text(RedScore, scoreRedWidth, scoreRedHeight, scoreRedX,  scoreRedY);
+  
   
   BlueScore = Integer.toString(Blue);
   
@@ -20,13 +27,6 @@ void scoreBoardDraw() {
   textAlign(CENTER, CENTER);
   textSize(30);
   text(BlueScore, scoreBlueWidth, scoreBlueHeight, scoreBlueX,  scoreBlueY);
-  
-  RedScore = Integer.toString(Red);
-  
-  fill(random(0,255), random(0,255), random(0,255));
-  textAlign(CENTER, CENTER);
-  textSize(30);
-  text(RedScore, scoreRedWidth, scoreRedHeight, scoreRedX,  scoreRedY);
   
   fill(random(0,255), random(0,255), random(0,255));
   textAlign(CENTER, CENTER);
@@ -45,6 +45,7 @@ void restartKeyPress() {
     ballY = height*1/2;
     ballSize = 10;
     Blue = 0;
+    Red = 0;
     loop();
   }
 }

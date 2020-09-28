@@ -1,3 +1,4 @@
+
 int  ballSpeedX = 2;
 int  ballSpeedY = 2;
 float ballStartPositionX, ballX;
@@ -17,32 +18,41 @@ void ballSetUp() {
  void big(){  
    
     if (ballY < 100+ballSize*1/2 + 1 || ballY > height-ballSize*1/2) {
-    ballSize = ballSize + 0.5 ;
+    ballSize = ballSize + 2;    
     
-  }
+   
+      }
    
     if(ballX < netWidth+paddleWidth+ballSize*1/2 + 1){
       if(ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight){
-    ballSize = ballSize + 0.5 ;
-    ballSpeedY = ballSpeedY  + 1;
+    ballSize = ballSize + 2 ;
+    ballSpeedY = ballSpeedY  + 2;
    
     }
     }
     
    if (ballX > width-netWidth-paddleWidth-ballSize*1/2 + 1) {
      if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
-    ballSize = ballSize + 0.5 ;
-    ballSpeedY = ballSpeedY + 1;
+    ballSize = ballSize + 10 ;
+    ballSpeedY = ballSpeedY + 2;
 
      }
    }
    if(ballSize > 150){
      ballSize -= 0.5;
+     /*
+     for(int i = 0; i < Firework.length; i++){
+       Firework[i].draw();
+ Firework[i] .big();
+  Firework[i] .step();
+  Firework[i] .bounce ();
+  */
+   }
    }
    
    //  ballSize = ballSize + 0.5 ;
    
- }
+ 
 
 void ballDraw() {
     //floor and ceiling bounces
@@ -85,8 +95,8 @@ void ballDraw() {
 
   // Arithmetic Ball Movement
   ballX = ballX + ballSpeedX;
-  ballY = ballY + ballSpeedY;
-  
+  ballY += ballSpeedY;
+
   
    if(a == true)
   {
