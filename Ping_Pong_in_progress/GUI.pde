@@ -7,8 +7,8 @@ void GUI(){
  
  rect(titleWidth , titleHeight, titleX, titleY);
  
- rect(scoreRedWidth, scoreRedHeight, scoreRedX,  scoreRedY);
  rect(scoreBlueWidth, scoreBlueHeight, scoreBlueX,  scoreBlueY);
+  rect(scoreRedWidth, scoreRedHeight, scoreRedX,  scoreRedY);
  
  rect(randomWidth,  randomHeight, randomX, randomY);
  rect(restartWidth, restartHeight, restartWidth2, restartHeight2);

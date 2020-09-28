@@ -24,19 +24,16 @@ void ballSetUp() {
       }
    
     if(ballX < netWidth+paddleWidth+ballSize*1/2 + 1){
-      if(ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight){
-    ballSize = ballSize + 2 ;
-    ballSpeedY = ballSpeedY  + 2;
+    ballSize = ballSize + 0.5 ;
+    ballSpeedY = ballSpeedY  + 1;
    
-    }
+    
     }
     
    if (ballX > width-netWidth-paddleWidth-ballSize*1/2 + 1) {
-     if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
-    ballSize = ballSize + 10 ;
-    ballSpeedY = ballSpeedY + 2;
+    ballSize = ballSize + 0.5 ;
+    ballSpeedY = ballSpeedY + 1;
 
-     }
    }
    if(ballSize > 150){
      ballSize -= 0.5;
@@ -61,11 +58,11 @@ void ballDraw() {
   }
 
   if (ballX < netWidth+paddleWidth+ballSize*1/2) {
-    if (ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight) {
+     if (ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight) {
        ballSpeedX = ballSpeedX * -1;
     } else {
-     Blue += 1;
-      stop = true;
+       Blue += 1;
+    //  stop = true;
     }
         } 
     
@@ -75,7 +72,7 @@ void ballDraw() {
       ballSpeedX = ballSpeedX * -1;
       } else {
       Red += 1;
-      stop = true;
+    //  stop = true;
     }
     }  
           

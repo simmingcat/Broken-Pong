@@ -7,8 +7,6 @@ color darkRed = #D14848;
 int gameScreen = 0;
 boolean a = true;
 
-fw[] Firework= new fw [15];
-
 void setup(){
   fullScreen();
   screenChecker();
@@ -16,10 +14,6 @@ void setup(){
   procssingSetup();
   scoreBoardSetup();
   
-  
-   for(int i = 0; i < Firework.length; i++){
-  Firework[i] = new fw(width, height);
-   }
 }
 
 
@@ -32,12 +26,7 @@ void draw(){
 }
 
 void gameScreen() {
-for(int i = 0; i < Firework.length; i++){
-       Firework[i].draw();
- Firework[i] .big();
-  Firework[i] .step();
-  Firework[i] .bounce ();
-}
+  //pause();
   movementDrawBlue();
   movementDrawRed();
   ballDraw();
@@ -49,6 +38,8 @@ for(int i = 0; i < Firework.length; i++){
 }
 
 void keyPressed(){
+  restartKeyPress();
+   PauseKeyP();
 }
  void mousePressed(){
     if (gameScreen==0) {
