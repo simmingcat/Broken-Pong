@@ -3,6 +3,7 @@ public int paddleUpBlueN;
 
 
 void movementDrawBlue() {
+  if (keyPressed == true) {
   paddleUpBlueN = paddleUpBlue;
   if (keyPressed)movementBlue();
   stroke(teal);
@@ -10,6 +11,13 @@ void movementDrawBlue() {
   rect(paddleMoveXBlue, paddleUpBlue, paddleWidth, paddleHeight, 5);
   noFill();
   noStroke();
+  }
+}
+
+void moveBothBlue(){
+  if (keyPressed == true) {
+    movementRed();
+  }
 }
 
 void movementBlue() {

@@ -34,9 +34,6 @@ class fw{
   }//end step
   
  void big(){
-    if(y - dia < 0 || y + dia > height){
-    dia = dia + 0.5 ;
-  }
   if (dia > 150){
    dia = 150;
   }

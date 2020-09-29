@@ -10,6 +10,9 @@ void screen(){
   else if (gameScreen == 1) {
     gameScreen();
   }
+  else if(gameScreen == 2){
+    gameOver();
+  }
 }
 
 void initScreen() {

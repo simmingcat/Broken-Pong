@@ -1,4 +1,4 @@
-
+//fw[] Firework= new fw [100];
 int  ballSpeedX = 2;
 int  ballSpeedY = 2;
 float ballStartPositionX, ballX;
@@ -36,17 +36,19 @@ void ballSetUp() {
 
    }
    if(ballSize > 150){
-     ballSize -= 0.5;
+     ballSize = 150;
+     
      /*
      for(int i = 0; i < Firework.length; i++){
-       Firework[i].draw();
+//       Firework[i].draw();
  Firework[i] .big();
   Firework[i] .step();
   Firework[i] .bounce ();
-  */
+  
    }
+   */
    }
-   
+ }
    //  ballSize = ballSize + 0.5 ;
    
  
@@ -60,20 +62,14 @@ void ballDraw() {
   if (ballX < netWidth+paddleWidth+ballSize*1/2) {
      if (ballY >= paddleUpBlue && ballY <= paddleUpBlue+paddleHeight) {
        ballSpeedX = ballSpeedX * -1;
-    } else {
-       Blue += 1;
-    //  stop = true;
-    }
+    } 
         } 
     
         
           if (ballX > width-netWidth-paddleWidth-ballSize*1/2) {
     if (ballY >= paddleDownRed && ballY <= paddleDownRed+paddleHeight) {
       ballSpeedX = ballSpeedX * -1;
-      } else {
-      Red += 1;
-    //  stop = true;
-    }
+      } 
     }  
           
           
@@ -95,8 +91,7 @@ void ballDraw() {
   ballY += ballSpeedY;
 
   
-   if(a == true)
-  {
+  if(a == true){
   stroke(255);
   strokeWeight(2);
   fill(random(0,255), random(0,255), random(0,255));

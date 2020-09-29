@@ -4,6 +4,7 @@ color teal = #00FFFD;
 color darkTeal= #48D1CD;
 color red = #FF0000;
 color darkRed = #D14848;
+String GO = "GameOver <3";
 int gameScreen = 0;
 boolean a = true;
 
@@ -33,8 +34,27 @@ void gameScreen() {
   big();
   GUI();
   TitleDraw();
-  scoreBoardDraw();
+  RedScore();
+  BlueScore();
+  moveBothBlue();
+  moveBothRed();
+  mode();
+  restartText();
+  bluescore();
+  redscore();
+  gameOver();
+ // speedUpRed();
+  println(ballSize);
+}
+
+void gameOver(){
+  if(Blue > 33 || gameScreen == 3){ 
+   fill(random(0,255), random(0,255), random(0,255));
+  textAlign(CENTER, CENTER);
+  textSize(30);
+  text(GO , 0, 100, 1366, 768);
   
+  }
 }
 
 void keyPressed(){
