@@ -4,17 +4,17 @@ public int paddleUpBlueN;
 
 void movementDrawBlue() {
   if (keyPressed == true) {
-  paddleUpBlueN = paddleUpBlue;
-  if (keyPressed)movementBlue();
-  stroke(teal);
-  fill(darkTeal);
-  rect(paddleMoveXBlue, paddleUpBlue, paddleWidth, paddleHeight, 5);
-  noFill();
-  noStroke();
+    paddleUpBlueN = paddleUpBlue;
+    if (keyPressed)movementBlue();
+    stroke(teal);
+    fill(darkTeal);
+    rect(paddleMoveXBlue, paddleUpBlue, paddleWidth, paddleHeight, 5);
+    noFill();
+    noStroke();
   }
 }
 
-void moveBothBlue(){
+void moveBothBlue() {
   if (keyPressed == true) {
     movementRed();
   }

@@ -8,22 +8,19 @@ String GO = "GameOver <3";
 int gameScreen = 0;
 boolean a = true;
 
-void setup(){
+void setup() {
   fullScreen();
   screenChecker();
   ballSetUp();
   procssingSetup();
   scoreBoardSetup();
-  
 }
 
 
-void draw(){
+void draw() {
   background(Black);
- // buildDraw();
+  // buildDraw();
   screen();
-  
-  
 }
 
 void gameScreen() {
@@ -43,28 +40,26 @@ void gameScreen() {
   bluescore();
   redscore();
   gameOver();
- // speedUpRed();
+  // speedUpRed();
   println(ballSize);
 }
 
-void gameOver(){
-  if(Blue > 33 || gameScreen == 3){ 
-   fill(random(0,255), random(0,255), random(0,255));
-  textAlign(CENTER, CENTER);
-  textSize(30);
-  text(GO , 0, 100, 1366, 768);
-  
+void gameOver() {
+  if (Blue > 33 || gameScreen == 3) { 
+    fill(random(0, 255), random(0, 255), random(0, 255));
+    textAlign(CENTER, CENTER);
+    textSize(30);
+    text(GO, 0, 100, 1366, 768);
   }
 }
 
-void keyPressed(){
+void keyPressed() {
   restartKeyPress();
-   PauseKeyP();
+  PauseKeyP();
 }
- void mousePressed(){
-    if (gameScreen==0) {
+void mousePressed() {
+  if (gameScreen==0) {
     startGame();
   }
-  
 }
 // height is 768, width is 1366

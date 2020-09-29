@@ -82,17 +82,17 @@ void procssingSetup() {
   hardHeight = 80;
   hardX = width*1/3;
   hardY = 20;
-  
+
   easyWidth = width*1/3 ;
   easyHeight = 80;
   easyX = width*1/3;
   easyY = 20;
-  
+
   mediumWidth = width*2/3;
   mediumHeight = 80;
   mediumX = width*1/3;
   mediumY = 20;
-  
+
   titleWidth = width*1/3;
   titleHeight = 0;
   titleX = width*1/3;
