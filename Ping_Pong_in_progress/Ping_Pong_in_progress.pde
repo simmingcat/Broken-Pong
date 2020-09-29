@@ -44,15 +44,6 @@ void gameScreen() {
   println(ballSize);
 }
 
-void gameOver() {
-  if (Blue > 33 || gameScreen == 3) { 
-    fill(random(0, 255), random(0, 255), random(0, 255));
-    textAlign(CENTER, CENTER);
-    textSize(30);
-    text(GO, 0, 100, 1366, 768);
-  }
-}
-
 void keyPressed() {
   restartKeyPress();
   PauseKeyP();

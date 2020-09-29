@@ -16,6 +16,7 @@ void scoreBoardSetup() {
 
 void BlueScore() {
   if (keyPressed)restartKeyPress();
+  if (keyPressed)unstuck();
   if (mousePressed)mousePressRestart();
   BlueScore = Integer.toString(Blue);
 
@@ -28,6 +29,7 @@ void BlueScore() {
 
 void RedScore() {
   if (keyPressed)restartKeyPress();
+  if (keyPressed)unstuck();
   if (mousePressed)mousePressRestart();
   RedScore = Integer.toString(Red);
 
@@ -68,6 +70,14 @@ void redscore() {
     loop();
   }
 }
+void gameOver() {
+  if (Blue > 33 || gameScreen == 3) { 
+    fill(random(0, 255), random(0, 255), random(0, 255));
+    textAlign(CENTER, CENTER);
+    textSize(30);
+    text(GO, 0, 100, 1366, 768);
+  }
+}
 
 
 void mousePressRestart() {
@@ -92,6 +102,15 @@ void restartKeyPress() {
     ballSpeedY = 2;
     Blue = 0;
     Red = 0;
+    loop();
+  }
+}
+
+void unstuck() {
+  if (key =='u') {
+    ballX = width*1/2;
+    ballY = height*1/2;
+
     loop();
   }
 }
