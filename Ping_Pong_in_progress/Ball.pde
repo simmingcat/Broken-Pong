@@ -1,4 +1,4 @@
-//fw[] Firework= new fw [100];
+
 int  ballSpeedX = 2;
 int  ballSpeedY = 2;
 float ballStartPositionX, ballX;
@@ -30,6 +30,7 @@ void big() {
     ballSize = ballSize + 0.5 ;
     ballSpeedY = ballSpeedY + 1;
   }
+  
   if (ballSize > 150) {
     ballSize = 150;
 
@@ -42,7 +43,9 @@ void big() {
      
      }
      */
+     
   }
+  
 }
 //  ballSize = ballSize + 0.5 ;
 

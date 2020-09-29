@@ -1,3 +1,5 @@
+//fw[] Firework= new fw [100];
+
 color  Black= #000000 ;
 color white = #FFFFFF;
 color teal = #00FFFD;
