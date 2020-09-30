@@ -1,58 +1,45 @@
 //fw[] Firework= new fw [100];
-
-color  Black= #000000 ;
-color white = #FFFFFF;
-color teal = #00FFFD;
-color darkTeal= #48D1CD;
-color red = #FF0000;
-color darkRed = #D14848;
-String GO = "GameOver <3";
-int gameScreen = 0;
-boolean a = true;
+All myGame = new All();
+//PS pro = new PS();
 
 void setup() {
   fullScreen();
-  screenChecker();
-  ballSetUp();
-  procssingSetup();
-  scoreBoardSetup();
+  //screenChecker();
+  myGame. PS();
+  myGame.ballSetUp();
+  myGame. scoreBoardSetup();
 }
 
 
 void draw() {
-  background(Black);
+  background(0);
   // buildDraw();
-  screen();
-}
-
-void gameScreen() {
-  //pause();
-  movementDrawBlue();
-  movementDrawRed();
-  ballDraw();
-  big();
-  GUI();
-  TitleDraw();
-  RedScore();
-  BlueScore();
-  moveBothBlue();
-  moveBothRed();
-  mode();
-  restartText();
-  bluescore();
-  redscore();
-  gameOver();
-  // speedUpRed();
-  println(ballSize);
+  myGame. screen();
+  myGame. gameScreen();
+  myGame. initScreen();
+  myGame. movementDrawBlue();
+  myGame. movementDrawRed();
+  myGame. ballDraw();
+  myGame. big();
+  myGame. GUI();
+  myGame. TitleDraw();
+  myGame. RedScore();
+  myGame. BlueScore();
+  myGame. moveBoth();
+  myGame. mode();
+  myGame. restartText();
+  myGame. bluescore();
+  myGame. redscore();
 }
 
 void keyPressed() {
-  restartKeyPress();
-  PauseKeyP();
+  myGame. restartKeyPress();
+  myGame. movement();
 }
 void mousePressed() {
-  if (gameScreen==0) {
-    startGame();
+  myGame. screen();
+  if (myGame.gameScreen==0) {
+    myGame. startGame();
   }
 }
 // height is 768, width is 1366

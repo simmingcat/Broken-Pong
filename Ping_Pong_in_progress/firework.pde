@@ -1,5 +1,5 @@
 
-class fw {
+public class fw {
   //var
   private float x ; 
   private float y ;
