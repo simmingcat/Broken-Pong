@@ -1,4 +1,4 @@
-public class All {
+public abstract class All {
   PFont Score;
   PFont titleFont;
 
