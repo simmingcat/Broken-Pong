@@ -29,10 +29,10 @@ void speedUpRed() {
 
 void movementRed() {
   if (keyCode == UP || key == 'i') {
-    paddleDownRed -= 2;
+    paddleDownRed -= 3;
   }
 
   if (keyCode == DOWN || key == 'k') {
-    paddleDownRed += 2;
+    paddleDownRed += 3;
   }
 }

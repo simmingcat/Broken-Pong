@@ -26,4 +26,5 @@ void initScreen() {
 
 void startGame() {
   gameScreen=1;
+  //gameScreen = 2;
 }

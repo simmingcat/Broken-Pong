@@ -1,10 +1,11 @@
 PFont Score;
 String Re = "Restart";
-String zero =" 0";
+//String zero =" 0";
 int Blue;
 int Red;
 String BlueScore;
 String RedScore;
+String CRTC = "Press r to Restart";
 Boolean regame = false;
 Boolean stop = false;
 
@@ -15,6 +16,7 @@ void scoreBoardSetup() {
 }
 
 void BlueScore() {
+  gameOver();
   if (keyPressed)restartKeyPress();
   if (keyPressed)unstuck();
   if (mousePressed)mousePressRestart();
@@ -53,8 +55,8 @@ void bluescore() {
     ballX = width*1/2;
     ballY = height*1/2;
     ballSize = 10;
-    ballSpeedX = 2;
-    ballSpeedY = 2;
+    ballSpeedX = 5;
+    ballSpeedY = 5;
     loop();
   }
 }
@@ -65,17 +67,26 @@ void redscore() {
     ballX = width*1/2;
     ballY = height*1/2;
     ballSize = 10;
-    ballSpeedX = 2;
-    ballSpeedY = 2;
+    ballSpeedX = 5;
+    ballSpeedY = 5;
     loop();
   }
 }
 void gameOver() {
-  if (Blue > 33 || gameScreen == 3) { 
+  if (Blue > 29 || gameScreen == 3) { 
+    background(0);
+    stop = true;
+    ballX = width*1/2;
+    ballY = height*1/2;
     fill(random(0, 255), random(0, 255), random(0, 255));
     textAlign(CENTER, CENTER);
     textSize(30);
-    text(GO, 0, 100, 1366, 768);
+    text(GO, 0, 0, 1366, 768);
+    
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text(CRTC, width*1/3, height*1/2, width*1/3, 100);
+    loop();
   }
 }
 
@@ -85,8 +96,8 @@ void mousePressRestart() {
     ballX = width*1/2;
     ballY = height*1/2;
     ballSize = 10;
-    ballSpeedX = 2;
-    ballSpeedY = 2;
+    ballSpeedX= 5;
+    ballSpeedY = 5;
     Blue = 0;
     Red = 0;
     loop();

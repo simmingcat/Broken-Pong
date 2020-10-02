@@ -23,10 +23,10 @@ void moveBothBlue() {
 void movementBlue() {
 
   if (keyCode == UP || key == 'w') {
-    paddleUpBlue += -2;
+    paddleUpBlue += -3;
   }
 
   if (keyCode == DOWN || key == 's') {
-    paddleUpBlue += 2;
+    paddleUpBlue += 3;
   }
 }

@@ -13,10 +13,12 @@ void setup() {
 
 void draw() {
   background(0);
+  screen();
   // buildDraw();
-  myGame. screen();
+  //myGame. screen();
   myGame. gameScreen();
-  myGame. initScreen();
+ // myGame. initScreen();
+ /*
   myGame. movementDrawBlue();
   myGame. movementDrawRed();
   myGame. ballDraw();
@@ -30,16 +32,28 @@ void draw() {
   myGame. restartText();
   myGame. bluescore();
   myGame. redscore();
+  */
 }
 
+  void screen() {
+    if (myGame. gameScreen == 0) {
+      myGame. initScreen();
+    } else if (myGame. gameScreen == 1) {
+     myGame. gameScreen();
+      
+    } else if (myGame. gameScreen == 2) {
+      myGame. gameOver();
+    }
+   
+  }
 void keyPressed() {
   myGame. restartKeyPress();
   myGame. movement();
 }
 void mousePressed() {
-  myGame. screen();
-  if (myGame.gameScreen==0) {
+  if (myGame.gameScreen==0) {   
     myGame. startGame();
+     
   }
 }
 // height is 768, width is 1366

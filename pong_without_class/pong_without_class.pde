@@ -35,13 +35,14 @@ void gameScreen() {
   TitleDraw();
   RedScore();
   BlueScore();
-  moveBothBlue();
-  moveBothRed();
+ // moveBothBlue();
+ // moveBothRed();
   mode();
   restartText();
   bluescore();
   redscore();
   gameOver();
+  modeKey();
   // speedUpRed();
   println(ballSize);
 }
@@ -49,6 +50,7 @@ void gameScreen() {
 void keyPressed() {
   restartKeyPress();
   PauseKeyP();
+  modeKey();
 }
 void mousePressed() {
   if (gameScreen==0) {

@@ -1,6 +1,6 @@
 
-int  ballSpeedX = 2;
-int  ballSpeedY = 2;
+int  ballSpeedX = 5;
+int  ballSpeedY = 5;
 float ballStartPositionX, ballX;
 float ballStartPositionY, ballY;
 float ballSize;

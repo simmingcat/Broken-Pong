@@ -1,4 +1,4 @@
-public abstract class All {
+public class All {
   PFont Score;
   PFont titleFont;
 
@@ -148,6 +148,16 @@ public abstract class All {
     textSize(20);
     textAlign(CENTER, CENTER);
     text(CTS, width*1/3, height*1/2, width*1/3, 100);
+    
+    ballX = width*1/2;
+    ballY = height*1/2;
+    /*
+    ballSize = 10;
+    ballSpeedX = 2;
+    ballSpeedY = 2;
+    Blue = 0;
+    Red = 0;
+*/
   }
 
 
@@ -382,15 +392,7 @@ public abstract class All {
   }
 
   //mouse pressed
-  void screen() {
-    if (gameScreen == 0) {
-      initScreen();
-    } else if (gameScreen == 1) {
-      gameScreen();
-    } else if (gameScreen == 2) {
-      gameOver();
-    }
-  }
+
   void quitMousePress() {
     if (mouseX >=titleX && mouseX<=titleWidth && mouseY>=titleY*0 && mouseY <= titleHeight) {
       exit();
