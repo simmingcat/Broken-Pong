@@ -1,14 +1,14 @@
 //fw[] Firework= new fw [100];
 
-color  Black= #000000 ;
-color white = #FFFFFF;
-color teal = #00FFFD;
-color darkTeal= #48D1CD;
-color red = #FF0000;
-color darkRed = #D14848;
-String GO = "GameOver <3";
-int gameScreen = 0;
-boolean a = true;
+public color  Black= #000000 ;
+public color white = #FFFFFF;
+public color teal = #00FFFD;
+public color darkTeal= #48D1CD;
+public color red = #FF0000;
+public color darkRed = #D14848;
+//String GO = "GameOver <3";
+public int gameScreen = 0;
+public boolean a = true;
 
 void setup() {
   fullScreen();
@@ -27,17 +27,20 @@ void draw() {
 
 void gameScreen() {
   //pause();
+   GUI();
+   mode();
   movementDrawBlue();
   movementDrawRed();
   ballDraw();
   big();
-  GUI();
   TitleDraw();
   RedScore();
   BlueScore();
+  hardmode();
+  MediumMode();
+  EasyMode();
  // moveBothBlue();
  // moveBothRed();
-  mode();
   restartText();
   bluescore();
   redscore();

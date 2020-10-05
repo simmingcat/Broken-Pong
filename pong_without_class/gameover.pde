@@ -1,9 +1,11 @@
 
-
+String GORW = "GameOver Red Win <3";
+String GOBW = "GameOver Blue Win <3";
+String CRTC = "Press r to Restart";
 
 
 void gameOverBlue() {
-  if (Blue > 29 || gameScreen == 3) { 
+  if (Blue > 10 || gameScreen == 3) { 
     background(0);
     stop = true;
     ballX = width*1/2;
@@ -21,7 +23,7 @@ void gameOverBlue() {
 }
 
 void gameOverRed(){
-  if (Red > 29 || gameScreen == 3) { 
+  if (Red > 10 || gameScreen == 3) { 
   background(0);
     stop = true;
     ballX = width*1/2;

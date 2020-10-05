@@ -1,13 +1,7 @@
 PFont Score;
-String Re = "Restart";
 //String zero =" 0";
-int Blue;
-int Red;
-String BlueScore;
-String RedScore;
-String CRTC = "Press r to Restart";
-String GORW = "GameOver Red Win";
-String GOBW = "GameOver Blue Win";
+int Blue, Red;
+String BlueScore, RedScore;
 //Boolean regame = false;
 Boolean stop = false;
 

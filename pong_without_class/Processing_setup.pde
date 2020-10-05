@@ -68,9 +68,9 @@ void procssingSetup() {
   randomX = 374;
   randomY = 80;
 
-  scoreRedWidth = 1286;
+  scoreRedWidth = 1266;
   scoreRedHeight = 0;
-  scoreRedX = 1366;
+  scoreRedX = 99;
   scoreRedY = 80;
 
   scoreBlueWidth = 0;

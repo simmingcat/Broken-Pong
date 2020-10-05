@@ -1,4 +1,5 @@
-String M = "GameMode";
+private String M = "GameMode";
+int Light = 0;
 
 void mode() {
   if (mousePressed)modeMouseP();
@@ -11,38 +12,20 @@ void mode() {
 
 void modeKey() {
   if (key == 'c') {
-    background(255);
-    fill(0);
-    rect(titleWidth, titleHeight, titleX, titleY);
-
-    rect(scoreBlueWidth, scoreBlueHeight, scoreBlueX, scoreBlueY);
-    rect(scoreRedWidth, scoreRedHeight, scoreRedX, scoreRedY);
-
-    rect(randomWidth, randomHeight, randomX, randomY);
-    rect(restartWidth, restartHeight, restartWidth2, restartHeight2);
-
-    rect(hardWidth, hardHeight, hardX, hardY);
-    rect(easyWidth, easyHeight, easyX, easyY);
-    rect(mediumWidth, mediumHeight, mediumX, mediumY);
+    
   }
 }
 
 
 
 void modeMouseP() {
-  if (mouseX > randomWidth && mouseX < randomX && mouseY > randomHeight && mouseY < randomY) {
-    background(255);
-    fill(0);
-    rect(titleWidth, titleHeight, titleX, titleY);
-
-    rect(scoreBlueWidth, scoreBlueHeight, scoreBlueX, scoreBlueY);
-    rect(scoreRedWidth, scoreRedHeight, scoreRedX, scoreRedY);
-
-    rect(randomWidth, randomHeight, randomX, randomY);
-    rect(restartWidth, restartHeight, restartWidth2, restartHeight2);
-
-    rect(hardWidth, hardHeight, hardX, hardY);
-    rect(easyWidth, easyHeight, easyX, easyY);
-    rect(mediumWidth, mediumHeight, mediumX, mediumY);
+  if (Light == 255) {       
+   if (mouseX > randomWidth && mouseX < randomX && mouseY > randomHeight && mouseY < randomY) {
+    Light = 0;
+  }
+  
+  background(Light);
+  }else {
+    Light = 255;
   }
 }

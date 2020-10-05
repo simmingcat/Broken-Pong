@@ -12,7 +12,7 @@ void GUI() {
 
   rect(randomWidth, randomHeight, randomX, randomY);
   rect(restartWidth, restartHeight, restartWidth2, restartHeight2);
-
+  
   rect(hardWidth, hardHeight, hardX, hardY);
   rect(easyWidth, easyHeight, easyX, easyY);
   rect(mediumWidth, mediumHeight, mediumX, mediumY);

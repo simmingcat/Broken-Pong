@@ -1,6 +1,6 @@
 
-int  ballSpeedX = 5;
-int  ballSpeedY = 5;
+float  ballSpeedX = 5;
+float  ballSpeedY = 5;
 float ballStartPositionX, ballX;
 float ballStartPositionY, ballY;
 float ballSize;
@@ -14,6 +14,7 @@ void ballSetUp() {
   ballSize = 10;
   gravity = 0.5;
 }
+
 
 void big() {  
 
@@ -87,6 +88,7 @@ void ballDraw() {
   // Arithmetic Ball Movement
   ballX = ballX + ballSpeedX;
   ballY += ballSpeedY;
+  ballSpeedY = gravity;
 
 
   if (a == true) {
