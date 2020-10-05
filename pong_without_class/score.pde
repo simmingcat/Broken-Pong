@@ -6,7 +6,9 @@ int Red;
 String BlueScore;
 String RedScore;
 String CRTC = "Press r to Restart";
-Boolean regame = false;
+String GORW = "GameOver Red Win";
+String GOBW = "GameOver Blue Win";
+//Boolean regame = false;
 Boolean stop = false;
 
 
@@ -16,7 +18,7 @@ void scoreBoardSetup() {
 }
 
 void BlueScore() {
-  gameOver();
+  gameOverBlue();
   if (keyPressed)restartKeyPress();
   if (keyPressed)unstuck();
   if (mousePressed)mousePressRestart();
@@ -30,6 +32,7 @@ void BlueScore() {
 }
 
 void RedScore() {
+  gameOverRed();
   if (keyPressed)restartKeyPress();
   if (keyPressed)unstuck();
   if (mousePressed)mousePressRestart();
@@ -40,13 +43,6 @@ void RedScore() {
   textSize(30);
   text(RedScore, scoreRedWidth, scoreRedHeight, scoreRedX, scoreRedY);
   //scoreRedWidth, scoreRedHeight, scoreRedX,  scoreRedY
-}
-
-void restartText() {
-  fill(random(0, 255), random(0, 255), random(0, 255));
-  textAlign(CENTER, CENTER);
-  textSize(30);
-  text(Re, restartWidth, restartHeight, restartWidth2, restartHeight2);
 }
 
 void bluescore() {
@@ -69,50 +65,6 @@ void redscore() {
     ballSize = 10;
     ballSpeedX = 5;
     ballSpeedY = 5;
-    loop();
-  }
-}
-void gameOver() {
-  if (Blue > 29 || gameScreen == 3) { 
-    background(0);
-    stop = true;
-    ballX = width*1/2;
-    ballY = height*1/2;
-    fill(random(0, 255), random(0, 255), random(0, 255));
-    textAlign(CENTER, CENTER);
-    textSize(30);
-    text(GO, 0, 0, 1366, 768);
-    
-    textSize(20);
-    textAlign(CENTER, CENTER);
-    text(CRTC, width*1/3, height*1/2, width*1/3, 100);
-    loop();
-  }
-}
-
-
-void mousePressRestart() {
-  if (mouseX > restartWidth && mouseX < restartWidth2 && mouseY > restartHeight && mouseY < restartHeight2 ) {
-    ballX = width*1/2;
-    ballY = height*1/2;
-    ballSize = 10;
-    ballSpeedX= 5;
-    ballSpeedY = 5;
-    Blue = 0;
-    Red = 0;
-    loop();
-  }
-}
-
-void restartKeyPress() {
-  if (key =='r') {
-    ballX = width*1/2;
-    ballY = height*1/2;
-    ballSize = 10;
-    ballSpeedX = 2;
-    ballSpeedY = 2;
-    Blue = 0;
-    Red = 0;
     loop();
   }
 }

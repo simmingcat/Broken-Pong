@@ -41,7 +41,8 @@ void gameScreen() {
   restartText();
   bluescore();
   redscore();
-  gameOver();
+  gameOverBlue();
+  gameOverRed();
   modeKey();
   // speedUpRed();
   println(ballSize);
