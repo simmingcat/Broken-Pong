@@ -88,7 +88,7 @@ void ballDraw() {
   // Arithmetic Ball Movement
   ballX = ballX + ballSpeedX;
   ballY += ballSpeedY;
-  ballSpeedY = gravity;
+  //ballSpeedY = gravity;
 
 
   if (a == true) {

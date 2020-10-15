@@ -1,5 +1,5 @@
 
-String Hard = "Hard" ;
+String Hard = "Hard TBA" ;
 
 void hardmode(){
 

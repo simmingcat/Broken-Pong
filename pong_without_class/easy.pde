@@ -1,4 +1,4 @@
-private String Easy = " Easy" ;
+private String Easy = " Easy TBA" ;
 
 void EasyMode(){
 
